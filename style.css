@@ -75,7 +75,7 @@ img {
   height: auto;
 }
 
-/*---- layout ----*/
+/*---- Layout ----*/
 .bd-grid {
   max-width: 1200px;
   margin-left: 1rem;
@@ -91,7 +91,7 @@ img {
   background-color: var(--white-color);
 }
 
-/*---- page ----*/
+/*---- Page ----*/
 .nav {
   height: 3rem;
   display: -webkit-box;
@@ -164,7 +164,7 @@ img {
   border-radius: 2rem;
 }
 
-/*appear menu*/
+/*Appear menu*/
 .show {
   top: 3rem;
 }
@@ -234,4 +234,229 @@ img {
 
 .home_scroll-icon {
   width: 2rem;
+}
+
+/*Animation*/
+.airpods1 {
+  -webkit-animation: airpods1 3s infinite;
+  animation: airpods1 3s infinite;
+  border-radius: 20px;
+}
+
+@-webkit-keyframes airpods1 {
+  50% {
+    -webkit-transform: translateY(-6%);
+    transform: translayteY(-6%);
+  }
+}
+
+@keyframes airpods1 {
+  50% {
+    -webkit-transform: translateY(-6%);
+    transform: translateY(-6%);
+  }
+}
+
+.airpods2 {
+  -webkit-animation: airpods2 3s infinite;
+  animation: airpods2 3s infinite;
+  border-radius: 20px;
+}
+
+@-webkit-keyframes airpods2 {
+  50% {
+    -webkit-transform: translateY(6%);
+    transform: translateY(6%);
+  }
+}
+
+@-webkit-keyframes airpods2 {
+  50% {
+    -webkit-transform: translateY(6%);
+    transform: translateY(6%);
+  }
+}
+
+@keyframes airpods2 {
+  50% {
+    -webkit-transform: translateY(6%);
+    transform: translateY(6%);
+  }
+}
+
+/*Details Airpods Pro*/
+.details {
+  height: calc(100vh - 3rem);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content max-content;
+  grid-template-columns: -webkit-max-content -webkit-max-content;
+  grid-template-columns: max-content max-content;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.details_box {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.details_initial {
+  font-size: var(--smaller-font-size);
+}
+
+.details_title {
+  font-size: var(--bigger-font-size);
+  font-weight: 400;
+}
+
+.details_title span {
+  font-size: var(--big-font-size);
+}
+
+.details_description {
+  font-size: var(--normal-font-size);
+}
+
+.details_img {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.details_img img {
+  width: 218px;
+}
+
+/*Animation*/
+.airpods {
+  -webkit-animation: airpods 3s infinite;
+  animation: airpods 3s infinite;
+  border-radius: 20px;
+}
+
+@-webkit-keyframes airpods {
+  50% {
+    -webkit-transform: translateY(-6%);
+    transform: translateY(-6%);
+  }
+}
+
+@keyframes airpods {
+  50% {
+    -webkit-transform: translateY(-6%);
+    transform: translateY(-6%);
+  }
+}
+
+/*---- Media Queries ----*/
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .nav {
+    height: 4rem;
+  }
+
+  .nav_menu {
+    margin-left: auto;
+  }
+
+  .nav_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .nav_item {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .nav_toggle {
+    display: none;
+  }
+
+  .home {
+    height: 100vh;
+    -ms-grid-columns: min-content;
+    grid-template-columns: -webkit-min-content;
+    grid-template-columns: min-content;
+    -ms-grid-rows: 80% 10%;
+    grid-template-rows: 80% 10%;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-column-gap: 4rem;
+    column-gap: 4rem;
+  }
+
+  .home_date {
+    -ms-grid-rows: 1;
+    -ms-grid-columns: 1;
+    grid-area: data;
+    padding: 0;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    text-align: initial;
+  }
+
+  .home_img {
+    -ms-grid-rows: 1;
+    -ms-grid-columns: 2;
+    grid-area: img;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .home_img img {
+    width: 6.8rem;
+    height: 15rem;
+  }
+
+  .home_scroll {
+    -ms-grid-rows: 2;
+    -ms-grid-columns: 1;
+    -ms-grid-column-span: 2;
+    grid-area: scroll;
+    padding-bottom: 2rem;
+  }
+
+  /*Details*/
+  .details {
+    -webkit-column-gap: 4rem;
+    column-gap: 4rem;
+  }
+
+  .details_box {
+    margin-bottom: 2rem;
+  }
+
+  .details_img {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .details_img img {
+    width: 18rem;
+  }
+}
+
+@media screnn and (min-width: 1200px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
